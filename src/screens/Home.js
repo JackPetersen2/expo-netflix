@@ -56,29 +56,33 @@ class Home extends React.Component {
           showsVerticalScrollIndicator={false}
         >
           <PromotionBanner />
+        
+          <View style={gStyle.box}>
+              <Text style={gStyle.heading}>Previews</Text>
+              <ShowScroller dataset="previews" type="round" />
 
-          <Text style={gStyle.heading}>Previews</Text>
-          <ShowScroller dataset="previews" type="round" />
+              <Text style={gStyle.heading}>My List</Text>
+              <ShowScroller dataset="myList" />
 
-          <Text style={gStyle.heading}>My List</Text>
-          <ShowScroller dataset="myList" />
+              <Text style={gStyle.heading}>Popular on Netflix</Text>
+              <ShowScroller />
 
-          <Text style={gStyle.heading}>Popular on Netflix</Text>
-          <ShowScroller />
+              <Text style={gStyle.heading}>Trending Now</Text>
+              <ShowScroller />
 
-          <Text style={gStyle.heading}>Trending Now</Text>
-          <ShowScroller />
+              <Text style={gStyle.heading}>Watch It Again</Text>
+              <ShowScroller />
 
-          <Text style={gStyle.heading}>Watch It Again</Text>
-          <ShowScroller />
+              <Text style={gStyle.heading}>NETFLIX ORIGINALS</Text>
+              <ShowScroller />
 
-          <Text style={gStyle.heading}>NETFLIX ORIGINALS</Text>
-          <ShowScroller />
+              <Text style={gStyle.heading}>Documentaries</Text>
+              <ShowScroller />
 
-          <Text style={gStyle.heading}>Documentaries</Text>
-          <ShowScroller />
+              <View style={gStyle.spacer3} />
+          </View>
 
-          <View style={gStyle.spacer3} />
+          
         </ScrollView>
 
         <Cast />
